@@ -25,7 +25,23 @@
         <item name="android:textStyle">bold</item>
 
     </style>
+    <style name="TextViewHint">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_20dp</item>
+        <item name="android:layout_marginStart">@dimen/_20dp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textStyle">bold</item>
 
+    </style>
+    <style name="TextViewTitleAddress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/_20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
     <style name="TextViewData">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

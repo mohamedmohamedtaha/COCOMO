@@ -97,9 +97,7 @@ class MainFragment : Fragment() {
     private fun emptySelect(){
         binding.radioButtonEmbedded.isChecked = false
         binding.radioButtonOrganic.isChecked = false
+        binding.radioButtonOrganic.isFocusable = true
         binding.radioButtonSemi.isChecked = false
     }
-
-
-
 }

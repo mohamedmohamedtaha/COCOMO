@@ -5,14 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".ui.main.fragment.sheetdialog.ShowDataFragment">
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@drawable/background_constraint">
     <TextView
         android:id="@+id/textViewTitle"
-        style="@style/TextViewData"
+        style="@style/TextViewTitleAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:text="@string/app_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
     <View
         android:id="@+id/view"
@@ -22,7 +31,7 @@
         android:background="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/constraint" />
 
     <TextView
         android:id="@+id/textView1"

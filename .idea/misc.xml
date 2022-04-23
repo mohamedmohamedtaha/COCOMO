@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Apps/COCOMO/app/src/main/res/drawable/background_bottom_sheet_dialog.xml" value="0.186" />
+        <entry key="..\:/Apps/COCOMO/app/src/main/res/drawable/background_constraint.xml" value="0.189" />
+        <entry key="..\:/Apps/COCOMO/app/src/main/res/drawable/background_radio_group.xml" value="0.189" />
         <entry key="..\:/Apps/COCOMO/app/src/main/res/layout/fragment_show_data.xml" value="0.234375" />
         <entry key="..\:/Apps/COCOMO/app/src/main/res/layout/main_activity.xml" value="0.24583333333333332" />
         <entry key="..\:/Apps/COCOMO/app/src/main/res/layout/main_fragment.xml" value="0.24583333333333332" />
