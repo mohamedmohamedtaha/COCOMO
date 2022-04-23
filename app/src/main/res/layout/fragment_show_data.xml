@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.main.fragment.sheetdialog.ShowDataFragment">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/TextViewData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/app_name" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/_10dp"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/TextViewTitle"
+        android:text="@string/Effort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:id="@+id/text_view_effort"
+        style="@style/TextViewData"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintStart_toStartOf="@id/text_view_average_staff_size"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        tools:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextViewTitle"
+        android:text="@string/tDev"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+    <TextView
+        android:id="@+id/text_view_t_dev"
+        style="@style/TextViewData"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@id/text_view_average_staff_size"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        tools:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TextViewTitle"
+        android:text="@string/productivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <TextView
+        android:id="@+id/text_view_productivity"
+        style="@style/TextViewData"
+        app:layout_constraintStart_toStartOf="@id/text_view_average_staff_size"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        tools:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/TextViewTitle"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:text="@string/averageStaffSize"
+        app:layout_constraintBottom_toTopOf="@id/guideLineBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <TextView
+        android:id="@+id/text_view_average_staff_size"
+        style="@style/TextViewData"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_20dp"
+        app:layout_constraintBottom_toTopOf="@id/guideLineBottom"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        tools:text="@string/app_name" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.90"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

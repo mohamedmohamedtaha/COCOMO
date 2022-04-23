@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">COCOMO</string>
+    <string name="enter_cocomo">أدخل KLOC</string>
+    <string name="organic">عضوي</string>
+    <string name="semi">نصف</string>
+    <string name="embedded">مغروس</string>
+    <string name="enter_value">رجاء ادخل KOLC</string>
+    <string name="Effort">جهد:</string>
+    <string name="tDev">Tdev:</string>
+    <string name="productivity">الإنتاجية:</string>
+    <string name="averageStaffSize">متوسط حجم الموظفين:</string>
+    <string name="semi_detached_model">COCOMO Semidetached Model for 400 KLOC: S</string>
+    <string name="organic_model">COCOMO Organic Model for %1$s KLOC</string>
+    <string name="embedded_model">COCOMO Embedded Model for %1$s KLOC</string>
+    <string name="pm">  %.2f PM</string>
+    <string name="klon_pm"> %.2f KLOC/PM</string>
+    <string name="persons"> %.2f Persons</string>
+    <string name="please_select_one">ملاحظه: اختر لعرض البيانات</string>
+</resources>

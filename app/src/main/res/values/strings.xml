@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">COCOMO</string>
+    <string name="enter_cocomo">Enter you KLOC</string>
+    <string name="organic">Organic</string>
+    <string name="semi">Semi</string>
+    <string name="embedded">Embedded</string>
+    <string name="enter_value">Please enter the KLOC</string>
+    <string name="Effort">Effort:</string>
+    <string name="tDev">Tdev:</string>
+    <string name="productivity">Productivity:</string>
+    <string name="averageStaffSize">Average Staff Size:</string>
+    <string name="organic_model">COCOMO Organic Model for %1$s KLOC</string>
+    <string name="semi_detached_model">COCOMO Semi detached Model for %1$s KLOC</string>
+    <string name="embedded_model">COCOMO Embedded Model for %1$s KLOC</string>
+    <string name="pm"> %.2f PM</string>
+    <string name="klon_pm"> %.2f KLOC/PM</string>
+    <string name="persons"> %.2f Persons</string>
+    <string name="please_select_one">Hint: Please which one for show result</string>
+</resources>
