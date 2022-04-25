@@ -15,5 +15,15 @@
     <string name="pm"> %.2f PM</string>
     <string name="klon_pm"> %.2f KLOC/PM</string>
     <string name="persons"> %.2f Persons</string>
-    <string name="please_select_one">Hint: Please which one for show result</string>
+    <string name="please_select_one">Hint: Please Select one for show result</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="for_help">For help</string>
+    <string name="my_name">Mohamed Mohamed Taha</string>
+    <string name="phone_ksa">(+996) 535020871</string>
+    <string name="phone_egypt">(+20) 1007919162</string>
+    <string name="name">Name:</string>
+    <string name="phone_ks">Phone KSA :</string>
+    <string name="phone_eg">Phone Egypt:</string>
+    <string name="email">Email:</string>
+    <string name="my_email">Mohamed.taha169@yahoo.com</string>
 </resources>

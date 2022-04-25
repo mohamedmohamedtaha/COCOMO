@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.fragment.ProfileFragment">
+    <TextView
+        android:id="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_help"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_18sp"/>
+    <View
+        android:id="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/_10dp"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/primary"/>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="@dimen/_70dp"
+        android:layout_height="@dimen/_70dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/_20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewEmail"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPhoneEgypt"
+        android:layout_marginEnd="@dimen/_20dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/profile_image" />
+    <TextView
+        android:id="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintStart_toEndOf="@id/imageProfile"
+        android:text="@string/name"
+        android:layout_marginStart="@dimen/_20dp"
+        style="@style/TextViewHint"/>
+    <TextView
+        android:id="@+id/textViewNameData"
+        style="@style/TextViewTitle"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintStart_toEndOf="@id/textViewName"
+        android:text="@string/my_name"
+        android:layout_marginStart="@dimen/_20dp"
+        />
+    <TextView
+        android:id="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        app:layout_constraintStart_toEndOf="@id/imageProfile"
+        android:text="@string/email"
+        android:layout_marginStart="@dimen/_20dp"
+        style="@style/TextViewHint"/>
+    <TextView
+        android:id="@+id/textViewEmailData"
+        style="@style/TextViewTitle"
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        app:layout_constraintStart_toEndOf="@id/textViewName"
+        android:text="@string/my_email"
+        android:layout_marginStart="@dimen/_20dp" />
+
+    <TextView
+        android:id="@+id/textViewPhoneKSA"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail"
+        app:layout_constraintStart_toEndOf="@id/imageProfile"
+        android:text="@string/phone_ks"
+        android:layout_marginStart="@dimen/_20dp"
+        style="@style/TextViewHint"/>
+    <TextView
+        android:id="@+id/textViewPhoneKSAData"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail"
+        app:layout_constraintStart_toEndOf="@id/textViewPhoneKSA"
+        style="@style/TextViewTitle"
+        android:text="@string/phone_ksa"
+        android:layout_marginStart="@dimen/_20dp" />
+    <TextView
+        android:id="@+id/textViewPhoneEgypt"
+        style="@style/TextViewHint"
+        app:layout_constraintTop_toBottomOf="@id/textViewPhoneKSA"
+        app:layout_constraintStart_toEndOf="@id/imageProfile"
+        android:text="@string/phone_eg"
+        android:layout_marginStart="@dimen/_20dp"
+        />
+    <TextView
+        android:id="@+id/textViewPhoneEgyptData"
+        app:layout_constraintTop_toBottomOf="@id/textViewPhoneKSA"
+        app:layout_constraintStart_toEndOf="@id/textViewPhoneEgypt"
+        style="@style/TextViewTitle"
+        android:text="@string/phone_egypt"
+        android:layout_marginStart="@dimen/_20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,8 @@
         android:layout_margin="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/enter_cocomo"
+        android:textColorHint="@color/primary"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +22,6 @@
             android:id="@+id/textInputEditText"
             android:layout_width="match_parent"
             android:inputType="numberDecimal"
-            android:textColorHint="@android:color/black"
             android:layout_height="match_parent"/>
     </com.google.android.material.textfield.TextInputLayout>
     <TextView
@@ -45,16 +46,30 @@
             android:id="@+id/radioButtonOrganic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/custom_radio_button"
+            android:gravity="center"
+            android:padding="@dimen/_10dp"
+            android:layout_margin="@dimen/_10dp"
             android:text="@string/organic"/>
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/radioButtonSemi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:button="@null"
+            android:background="@drawable/custom_radio_button"
+            android:gravity="center"            android:padding="@dimen/_10dp"
             android:text="@string/semi"/>
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/radioButtonEmbedded"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/custom_radio_button"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10dp"
+            android:padding="@dimen/_10dp"
             android:text="@string/embedded"/>
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

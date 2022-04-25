@@ -10,7 +10,14 @@ plugins {
 
 android {
     compileSdk 32
-
+    signingConfigs{
+        release{
+            storeFile file('D:\\Apps\\COCOMO.jks')
+            storePassword '01007919166Mm'
+            keyPassword '01007919166Mm'
+            keyAlias 'cocomo'
+        }
+    }
     defaultConfig {
         applicationId "com.mohamedtaha.imagine.cocomo"
         minSdk 21
